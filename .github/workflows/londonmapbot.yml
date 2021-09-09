@@ -17,7 +17,8 @@ jobs:
 
       - name: Install packages
         run: |
-          devtools::install_cran("rtweet")
+          install.packages("devtools")
+          install.packages("rtweet")
           devtools::install_github("brunomioto/reservatoriosBR")
         shell: Rscript {0}
         
