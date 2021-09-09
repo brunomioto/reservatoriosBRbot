@@ -1,4 +1,4 @@
-name: londonmapbot
+name: reservatoriosBRbot
 
 on:
   schedule:
@@ -18,5 +18,7 @@ jobs:
       - uses: r-lib/actions/setup-r@master
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
+      - name: Install reservatoriosBR package
+        run: Rscript -e 'devtools::install_github('brunomioto/reservatoriosBR')'
       - name: Create and post tweet
-        run: Rscript londonmapbot-tweet.R
+        run: Rscript subsistemas-tweet.R
