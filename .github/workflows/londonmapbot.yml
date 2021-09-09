@@ -1,5 +1,8 @@
 name: londonmapbot
 
+on:
+  workflow_dispatch:
+
 jobs:
   londonmapbot-post:
     runs-on: macOS-latest
