@@ -2,7 +2,7 @@ name: londonmapbot
 
 on:
   schedule:
-    - cron: '40,45,50 * * * *'
+    - cron: '10,15,20 * * * *'
 
 jobs:
   londonmapbot-post:
