@@ -17,8 +17,8 @@ jobs:
 
       - name: Install packages
         run: |
-          remotes::install_cran("rtweet")
-          remotes::install_github("brunomioto/reservatoriosBR")
+          devtools::install_cran("rtweet")
+          devtools::install_github("brunomioto/reservatoriosBR")
         shell: Rscript {0}
         
       - name: Create and post tweet
