@@ -1,9 +1,5 @@
 name: londonmapbot
 
-on:
-  schedule:
-    - cron: '0/5 * * * *'
-
 jobs:
   londonmapbot-post:
     runs-on: macOS-latest
