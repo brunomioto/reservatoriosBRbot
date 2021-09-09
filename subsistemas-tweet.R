@@ -10,9 +10,8 @@ reservatorios_token <- rtweet::create_token(
   access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
 
-
-# Build URL and fetch image from Mapbox API
-perc_subsistemas <- ONS_reservatorios(formato = "resumo")
+# Get data from reservatoriosBR package
+perc_subsistemas <- reservatoriosBR::ONS_reservatorios(formato = "resumo")
 
 
 # Build the status message (text and URL)
