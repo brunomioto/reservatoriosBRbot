@@ -16,14 +16,11 @@ jobs:
       - uses: r-lib/actions/setup-r@master
 
       - name: Install devtools
-        run: |
-          install.packages('devtools')
+        run: Rscript -e 'install.packages("devtools", dependencies = TRUE)'
       - name: Install rtweet
-        run: |
-          install.packages('rtweet')
+        run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Install reservatoriosBR
-        run: |
-          devtools::install_github('brunomioto/reservatoriosBR')
+        run: Rscript -e 'devtools::install_github('brunomioto/reservatoriosBR')'
           
         shell: Rscript {0}
         
