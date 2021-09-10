@@ -1,4 +1,4 @@
-name: londonmapbot
+name: reservatoriosBRbot
 
 on:
   workflow_dispatch:
@@ -24,4 +24,4 @@ jobs:
         shell: Rscript {0}
         
       - name: Create and post tweet
-        run: Rscript londonmapbot-tweet.R
+        run: Rscript subsistemas-tweet.R
