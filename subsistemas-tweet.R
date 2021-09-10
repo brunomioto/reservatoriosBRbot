@@ -15,7 +15,7 @@ reservatorios_token <- rtweet::create_token(
 perc_subsistemas <- reservatoriosBR::ONS_reservatorios(formato = "resumo")
 
 
-# Build the status message (text and URL)
+# Build the status message
 tweet_text <- paste0(
   "Nível dos subsistemas de reservatórios em ", format(Sys.Date(), "%d/%m/%y"), ":\n",
   perc_subsistemas[1,2],": ", round(perc_subsistemas[1,3],2),"%\n",
@@ -25,7 +25,7 @@ tweet_text <- paste0(
   "Dados da ONS obtidos a partir do pacote reservatoriosBR"
 )
 
-# Post the image to Twitter
+# Post the status message to Twitter
 rtweet::post_tweet(
   status = tweet_text,
   token = reservatorios_token
