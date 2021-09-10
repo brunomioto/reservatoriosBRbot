@@ -2,7 +2,7 @@ name: reservatoriosBRbot
 
 on:
   schedule:
-    - cron: '0/15 * * * *'
+    - cron: '1,31 * * * *'
 
 jobs:
   londonmapbot-post:
