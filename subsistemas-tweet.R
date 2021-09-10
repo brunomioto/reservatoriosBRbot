@@ -19,7 +19,7 @@ perc_subsistemas <- reservatoriosBR::ONS_reservatorios(formato = "resumo")
 
 # Build the status message
 tweet_text <- paste0(
-  "Nível dos subsistemas de reservatórios em ", format(Sys.Date(), "%d/%m/%y"), ":\n\n",
+  "Nível dos subsistemas de reservatórios em ", format(Sys.Date(), "%d/%m/%y"), "\n\n",
   perc_subsistemas[2,2],": ", round(perc_subsistemas[2,3],2),"%\n",
   perc_subsistemas[1,2],": ", round(perc_subsistemas[1,3],2),"%\n",
   perc_subsistemas[3,2],": ", round(perc_subsistemas[3,3],2),"%\n",
