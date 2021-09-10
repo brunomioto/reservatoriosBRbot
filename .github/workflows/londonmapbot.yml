@@ -18,10 +18,10 @@ jobs:
       - name: Install devtools
         run: Rscript -e 'install.packages("devtools", dependencies = TRUE)'
       - name: Install rtweet
-        run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
-      - name: Install reservatoriosBR
-        run: Rscript -e 'devtools::install_github('brunomioto/reservatoriosBR')'
-          
+        run: |
+          install.packages("remotes")
+          remotes::install_cran("rtweet")
+          remotes::install_github("brunomioto/reservatoriosBR")          
         shell: Rscript {0}
         
       - name: Create and post tweet
