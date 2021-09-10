@@ -1,7 +1,7 @@
-
-# Load packages
-library("rtweet")
-library("reservatoriosBR")
+# Install the package from CRAN
+install.packages("rtweet")
+install.packages("devtools")
+devtools::install_github('brunomioto/reservatoriosBR')
 
 reservatorios_token <- rtweet::create_token(
   app = "reservatoriosBR-bot",
