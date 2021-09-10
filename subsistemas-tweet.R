@@ -1,5 +1,3 @@
-# Install packages
-install.packages(".")
 
 # Load packages
 library("rtweet")
