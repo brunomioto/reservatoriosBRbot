@@ -17,13 +17,13 @@ jobs:
 
       - name: Install devtools
         run: |
-          install.packages("devtools")
+          install.packages('devtools')
       - name: Install rtweet
         run: |
-          install.packages("rtweet")
+          install.packages('rtweet')
       - name: Install reservatoriosBR
         run: |
-          devtools::install_github("brunomioto/reservatoriosBR")
+          devtools::install_github('brunomioto/reservatoriosBR')
           
         shell: Rscript {0}
         
