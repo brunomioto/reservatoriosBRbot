@@ -1,5 +1,5 @@
-# Install the package from CRAN
-install.packages(.)
+# Install packages
+install.packages(".")
 
 # Load packages
 library("rtweet")
