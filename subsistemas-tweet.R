@@ -3,10 +3,10 @@
 #install.packages("devtools")
 #devtools::install_github('brunomioto/reservatoriosBR')
 
-reservatorios_token <- rtweet::create_token(
-  app = "reservatoriosBR-bot",
-  consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
-  consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
+reservatorios_token <- rtweet:: rtweet_bot(
+  #app = "reservatoriosBR-bot",
+  api_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
+  api_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
   access_token =    Sys.getenv("TWITTER_ACCESS_TOKEN"),
   access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
